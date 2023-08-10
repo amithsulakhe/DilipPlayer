@@ -32,18 +32,59 @@ nav{
     text-decoration: none;
     color: black;
 }
-
+.video_section{
+    margin-top: 2%;
+}
+.parent_video_section{
+    position: relative;
+}
 .child_video_section{
     width: 50%;
     margin: 0 auto;
     position: relative;
     left: 0;
     top: 0;
-    height: 400px;
+    height: 345px;
     overflow: hidden;
+    box-shadow: 0 0 7px 1px green;
 }
 .child_video_section .video{
     position: absolute;
     width: 100%;
     height: 100%;
 }
+.control_btns{
+    display: flex;
+    width: 50%;
+    /* margin: 0 auto; */
+    gap: 50px;
+    justify-content: center;
+    position: absolute;
+    left: 25%;
+    bottom: 10%;
+
+}
+.btn{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: skyblue;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 6px;
+    transform: 0px;
+    font-size: 20px;
+    
+}
+.btn i{
+    transition: 0.35s;
+
+}
+
+.prev:hover i{
+transform: translateX(-5px);
+}
+.next:hover i{
+    transform: translateX(5px);
+    }
