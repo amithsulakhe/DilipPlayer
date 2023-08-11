@@ -37,10 +37,12 @@ nav{
 }
 .parent_video_section{
     position: relative;
+    display: flex;
+    justify-content: space-between;
+
 }
 .child_video_section{
     width: 50%;
-    margin: 0 auto;
     position: relative;
     left: 0;
     top: 0;
@@ -87,4 +89,18 @@ transform: translateX(-5px);
 }
 .next:hover i{
     transform: translateX(5px);
+    }
+    .random_video_section{
+        width: 350px;
+        display: flex;
+        /* background: red; */
+        flex-direction: column;
+        gap: 20px;
+        height: 85vh;
+        overflow: auto;
+    }
+    .random_video_section .video{
+    box-shadow: 0 0 7px red;
+    box-shadow: 0 0 7px;
+
     }
